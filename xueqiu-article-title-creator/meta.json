@@ -1,0 +1,20 @@
+{
+  "skill": {
+    "id": "local:雪球爆款标题写作",
+    "name": "雪球爆款标题写作",
+    "description": "该技能应在用户想要\"创建雪球爆款标题\"、\"撰写吸引点击的雪球标题\"、\"生成雪球帖子标题\"、\"雪球标题\"、\"写个雪球标题\"或需要基于雪球平台传播逻辑进行高点击标题创作时使用。",
+    "directory": "雪球爆款标题写作",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1778466095,
+    "contentHash": "194ba471be8aef5c0fb6115159ed900ffffa070e2d00a789b871b88db615d611",
+    "updatedAt": 0
+  },
+  "backupCreatedAt": 1779935038,
+  "sourcePath": "/Users/saibopika/.codex/skills/雪球爆款标题写作"
+}

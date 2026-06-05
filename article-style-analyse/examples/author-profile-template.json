@@ -1,0 +1,249 @@
+{
+  "_meta": {
+    "_comment": "本模板用于记录风格分析的结构化数据。字段说明：'[必填]' = 必须填写，'[选填]' = 可留空。'_comment' 字段说明该字段的含义和填写要求"
+  },
+  "author_profile": {
+    "style_core_definition": "作者风格的本质特征概括（一句话定义）",
+    "_comment_style_core_definition": "[必填] 必须包含认知框架 + 语言风格 + 情感基调三个要素。示例：'用经济学视角解剖日常现象，以冷静犀利的语言拆穿大众认知盲区'",
+    "style_stability": "根据跨文本相似度评估风格的一致性程度（1-5级）",
+    "_comment_style_stability": "[必填] 1=高度不稳定，5=极度恒定。评估时考虑：跨不同主题的文章，思维框架和语言风格是否一致",
+    "style_adaptability": "作者如何根据不同主题、受众调整其写作风格的策略",
+    "_comment_style_adaptability": "[必填] 描述作者在不同主题下的风格微调规律。示例：'写投资主题时数据密度高、语气更冷；写成长主题时故事密度高、语气稍暖'",
+    "style_uniqueness": "该作者与同领域其他作者相比，最具有辨识度的特征",
+    "_comment_style_uniqueness": "[必填] 找出 1-2 个最独特的特征。示例：'不同于大多数商业作者的宏大叙事，他总从一个极小的切口（一家店、一个人）切入'"
+  },
+  "constant_characteristics": {
+    "_comment": "[必填] 恒定特征 = 在 3+ 篇文章中一致出现的特征。每个子维度的 imitation_points 字段描述如何在新文章中复现该特征",
+    "thinking_traits": {
+      "core_thinking_pattern": "贯穿所有文本的深层思考与分析方式（如：系统思维、跨界整合）",
+      "_comment_core_thinking_pattern": "[必填] 用一句话概括作者解释世界的底层模型。示例：'经济学视角——用成本收益、激励机制、信息不对称解释一切现象'",
+      "issue_dissection_angle": "面对问题时，习惯的切入点和剖析视角",
+      "_comment_issue_dissection_angle": "[必填] 描述作者从什么角度切入问题。示例：'从微观切片折射宏观巨变——用一个具体案例切入，再推导系统性结论'",
+      "argumentation_structure": "常用的论证组织和说服结构（如：演绎、归纳、辩证）",
+      "_comment_argumentation_structure": "[必填] 描述论证链条的类型。示例：'递进式为主：现象 → 表面原因 → 深层原因 → 本质规律'",
+      "imitation_points": "复现该思维特征的具体方法和思维提示句",
+      "_comment_imitation_points": "[必填] 必须是可执行的指令，不是概念描述。示例：'动笔前先问自己：这个现象的成本是什么？收益是什么？激励结构是什么？'"
+    },
+    "expressive_intent": {
+      "core_purpose": "核心写作目的（如：打破常识认知、提供行动指南）",
+      "_comment_core_purpose": "[必填] 从以下选择或自定义：告知、说服、娱乐、挑动、共鸣、打破认知、提供指南",
+      "target_audience": "文章假设和定位的目标读者画像",
+      "_comment_target_audience": "[必填] 描述读者是谁、有什么特征。示例：'25-35 岁职场人，有一定商业认知但缺乏系统框架'",
+      "interaction_mode": "建立的作者-读者关系模式（如：严厉的导师、同行的探索者）",
+      "_comment_interaction_mode": "[必填] 从以下选择或自定义：导师型（传授）、同行型（分享）、质疑型（挑战）、煽动型（号召）",
+      "imitation_points": "如何在新文章中建立相似的对话场域和作者定位",
+      "_comment_imitation_points": "[必填] 可执行的指令。示例：'用我们而非你们，分享自己的观察和思考，不说教，不居高临下'"
+    },
+    "structural_framework": {
+      "common_organization_patterns": "文章在宏观组织上的通用模式（如：故事-本质-方案、观点-反面-重建）",
+      "_comment_common_organization_patterns": "[必填] 找出反复出现的框架。示例：'现象-本质-预测：用数据引入现象 → 深挖本质原因 → 趋势判断'",
+      "progression_tempo": "论述展开的速度与张弛律动",
+      "_comment_progression_tempo": "[必填] 描述段落间的推进节奏。示例：'递进式推进，每段比上一段更深一层，用连接词（但问题是、更关键的是）推进'",
+      "head_tail_treatments": "开头切入（如：冲突、段子、引用）与结尾收尾（如：金句提炼、开放反思）的惯用手法",
+      "_comment_head_tail_treatments": "[必填] 分别描述开头和结尾的惯用方式。示例：'开头：反直觉数据抛出。结尾：金句收束，一句话概括核心观点'",
+      "imitation_points": "如何按照该框架为新文章规划大纲",
+      "_comment_imitation_points": "[必填] 可执行的指令。示例：'先写三级大纲，确认每节符合现象-本质-预测框架，再开始写正文'"
+    },
+    "language_style": {
+      "sentence_pattern_preference": "长短句搭配比例，标志性句式（如：多重转折、并列排比）",
+      "_comment_sentence_pattern_preference": "[必填] 必须量化。示例：'70% 短句（<15字）+ 30% 长句（>25字）。标志性句式：不是...而是...、本质上是...'",
+      "vocabulary_habits": "偏好的词汇调性（如：高信息密度、书面学术、极简口语）",
+      "_comment_vocabulary_habits": "[必填] 描述用词正式度和特征。示例：'口语化但不随意。不用然而/因此，用但/所以。行业术语密度中等'",
+      "signature_phrases": ["在所有文章中高频出现的标志性词汇或招牌表达"],
+      "_comment_signature_phrases": "[必填] 列出 5-10 个高频词。必须是出现 3+ 次的非通用词",
+      "imitation_points": "如何在润色阶段微调词句以无限接近其语言风格",
+      "_comment_imitation_points": "[必填] 可执行的指令。示例：'写完初稿后，检查每段是否自然融入了 1-2 个特征词汇，不硬塞'"
+    }
+  },
+  "adaptive_characteristics": {
+    "_comment": "[必填] 适应特征 = 仅在特定主题下出现的特征。每个主题类型独立记录，说明作者在该主题下的风格微调",
+    "theme_type_a": {
+      "theme_name": "例如：深度行业评论",
+      "_comment_theme_name": "[必填] 主题类型名称",
+      "mindset_adjustments": "在撰写此类主题时，思维深度的调整",
+      "_comment_mindset_adjustments": "[必填] 示例：'极度注重商业数据和逻辑推演，几乎不使用个人经历'",
+      "structural_adjustments": "在撰写此类主题时，组织结构的变化",
+      "_comment_structural_adjustments": "[必填] 示例：'更倾向于规范的段落和数据图表层级，段落较长'",
+      "language_adjustments": "在撰写此类主题时，语气词汇的变化",
+      "_comment_language_adjustments": "[必填] 示例：'专业度高，几乎不使用口语自嘲'",
+      "adaptation_imitation_points": "在相似主题下写作时的具体执行要点",
+      "_comment_adaptation_imitation_points": "[必填] 可执行的指令"
+    },
+    "theme_type_b": {
+      "theme_name": "例如：个人成长随笔",
+      "_comment_theme_name": "[必填] 主题类型名称",
+      "mindset_adjustments": "在撰写此类主题时，思维深度的调整",
+      "_comment_mindset_adjustments": "[必填] 示例：'注重感性体验和微观切片的感知'",
+      "structural_adjustments": "在撰写此类主题时，组织结构的变化",
+      "_comment_structural_adjustments": "[必填] 示例：'不设硬性层级，段落较短，过渡自然散漫'",
+      "language_adjustments": "在撰写此类主题时，语气词汇的变化",
+      "_comment_language_adjustments": "[必填] 示例：'口语化，多情绪共鸣词'",
+      "adaptation_imitation_points": "在相似主题下写作时的具体执行要点",
+      "_comment_adaptation_imitation_points": "[必填] 可执行的指令"
+    }
+  },
+  "what_not_to_do": {
+    "_comment": "[必填] 作者刻意避免的表达方式、论证方式、立场——这往往比'做什么'更能定义风格",
+    "avoided_expressions": ["作者刻意避免的词汇、句式、表达方式"],
+    "_comment_avoided_expressions": "[必填] 示例：'不用然而/因此等书面连接词，不用感叹号，不用排比抒情'",
+    "avoided_argumentation": ["作者刻意避免的论证方式"],
+    "_comment_avoided_argumentation": "[必填] 示例：'不先给结论再论证（反对先立后破），不引用权威来佐证观点'",
+    "avoided_stances": ["作者刻意避免的立场或态度"],
+    "_comment_avoided_stances": "[必填] 示例：'不煽情、不说教、不站队、不非黑即白'"
+  },
+  "individual_article_analysis": {
+    "_comment": "[必填] 每篇样本文章的独立分析结果。按 article_1, article_2, ... 编号",
+    "article_1": {
+      "meta_info": {
+        "title": "样本文章标题",
+        "theme": "样本文章主题",
+        "word_count": 0
+      },
+      "macro_style": {
+        "thinking_model": {
+          "structure": "文章的逻辑思考推进线路",
+          "_comment_structure": "[必填] 画出论点链条：A → B → C，判断链条类型（递进/对比/归纳/演绎）",
+          "method": "归纳、演绎、类比、驳论等具体论证方法",
+          "_comment_method": "[必填] 统计每种论证方法的出现次数",
+          "angle": "具体的切入点或底层认知模型",
+          "_comment_angle": "[必填] 描述作者从什么角度切入这个主题"
+        },
+        "values": {
+          "focus": ["核心关注点1", "核心关注点2"],
+          "_comment_focus": "[必填] 作者在这篇文章中反复强调的领域",
+          "criteria": "评判是非和优劣的底层逻辑",
+          "_comment_criteria": "[必填] 示例：'以效率为标准，评判投入产出比'",
+          "stance": "对议题所持的立场和情感偏向",
+          "_comment_stance": "[必填] 描述作者的显性或隐性立场"
+        },
+        "intent": {
+          "purpose": "写作的核心意图",
+          "_comment_purpose": "[必填] 从以下选择：告知、说服、娱乐、挑动、共鸣",
+          "expected_effect": "希望读者产生的改变",
+          "_comment_expected_effect": "[必填] 描述认知/情感/行为层面的预期变化",
+          "audience_relationship": "与读者对话的距离和定位",
+          "_comment_audience_relationship": "[必填] 从以下选择：导师型、同行型、质疑型、煽动型"
+        },
+        "architecture": {
+          "organizational_pattern": "文章在逻辑展开上的模式",
+          "_comment_organizational_pattern": "[必填] 示例：'现象-本质-预测'",
+          "progression": "从开头到结尾的演进路线",
+          "_comment_progression": "[必填] 描述开头→中间→结尾的推进方式",
+          "emphasis": "论点、数据、故事的比例安排",
+          "_comment_emphasis": "[必填] 示例：'论点 60% + 数据 25% + 故事 15%'"
+        }
+      },
+      "micro_style": {
+        "language_features": {
+          "sentence_pattern": ["句式特征1", "长短句交替规律"],
+          "_comment_sentence_pattern": "[必填] 量化描述。示例：'短句为主（70%），标志性句式：不是...而是...'",
+          "vocabulary": {
+            "formality_level": 4,
+            "_comment_formality_level": "[必填] 1=极口语，5=极书面。示例：3=中等",
+            "preferred_words": ["高频特征词1", "特征词2"],
+            "_comment_preferred_words": "[必填] 列出出现 3+ 次的非通用词",
+            "avoided_words": ["规避词1", "规避词2"],
+            "_comment_avoided_words": "[必填] 列出作者刻意避免的词汇"
+          },
+          "rhetoric": ["比喻偏好", "排比使用习惯", "反问/反讽频率"],
+          "_comment_rhetoric": "[必填] 记录每种修辞手法的具体实例"
+        },
+        "structure_features": {
+          "paragraph_length": "平均段落长度（如：2-4句，150字内）",
+          "_comment_paragraph_length": "[必填] 统计数据",
+          "transitions": "段落过渡的衔接方式",
+          "_comment_transitions": "[必填] 示例：'硬切换为主，偶尔用但问题是、更关键的是推进'",
+          "hierarchy_format": "排版及层级设计习惯（如：加粗、引用块、列表）",
+          "_comment_hierarchy_format": "[必填] 统计标题、加粗、引用块、列表的使用频率"
+        },
+        "narrative": {
+          "perspective": "叙事视角（如：第二人称视角为主，辅以第一人称经历）",
+          "_comment_perspective": "[必填] 统计人称代词分布",
+          "distance": "与主题的心理距离（冷静客观/饱含情绪）",
+          "_comment_distance": "[必填] 示例：'抽离式——冷静观察，不带个人情感'",
+          "temporal_flow": "时间脉络的处理方式",
+          "_comment_temporal_flow": "[必填] 示例：'正叙为主，偶尔插叙个人经历'"
+        },
+        "emotion": {
+          "intensity": 3,
+          "_comment_intensity": "[必填] 1-5 级，给出判定依据",
+          "expression": "情感的表达倾向（如：通过平实的叙事引发共鸣、情绪外露）",
+          "_comment_expression": "[必填] 示例：'通过事实引发情感，不直接表达'",
+          "tone": "情感基调（如：自嘲、犀利、真诚）",
+          "_comment_tone": "[必填] 从以下选择或自定义：幽默、尖锐、真诚、冷漠、激进、温暖、讽刺、自嘲、冷静"
+        },
+        "thinking": {
+          "logic_progression": "论证推导的节奏和步长",
+          "_comment_logic_progression": "[必填] 示例：'急促论证——一段一个新论点，信息密集'",
+          "depth": 4,
+          "_comment_depth": "[必填] 1-5 级，给出判定依据",
+          "rhythm": "阅读和思考的呼吸感节奏",
+          "_comment_rhythm": "[必填] 示例：'张弛有度——长段分析后跟短段强调'"
+        },
+        "signature_markers": {
+          "signature_expressions": ["专属口头禅", "高频标点组合"],
+          "_comment_signature_expressions": "[必填] 出现 2+ 次的口头禅、招牌句式、特殊标点",
+          "imagery_system": ["频繁使用的意象系统"],
+          "_comment_imagery_system": "[必填] 记录反复出现的视觉意象及其隐喻含义"
+        },
+        "cultural_background": {
+          "allusions": ["引用典故偏好（如：西方哲学、硅谷创业圈）"],
+          "_comment_allusions": "[必填] 分类统计：历史类、流行文化类、学术理论类各占多少",
+          "knowledge_domains": ["跨学科知识点分布"],
+          "_comment_knowledge_domains": "[必填] 列出作者涉猎的知识领域"
+        },
+        "meter_rhythm": {
+          "tempo_details": "音节长短配合，逗号句号停顿的特定频率",
+          "_comment_tempo_details": "[必填] 示例：'长短句交替规律为长-短-长-短，逗号密集，句号稀疏'"
+        }
+      }
+    }
+  },
+  "style_variation_analysis": {
+    "_comment": "[必填] 跨文本风格变化分析",
+    "theme_influence": "主题切换对作者风格造成的显性波动规律",
+    "_comment_theme_influence": "[必填] 描述不同主题下的风格微调规律",
+    "audience_influence": "受众群体的差异如何反向塑造作者的选择",
+    "_comment_audience_influence": "[选填] 如果样本中有面向不同受众的文章，分析受众对风格的影响",
+    "evolutionary_trend": "多篇文章间表现出的风格进化、洗练、或模式化趋势",
+    "_comment_evolutionary_trend": "[选填] 如果样本按时间排列，分析风格是否随时间演变",
+    "invariant_core": "在所有的波动与迁移中，绝对没有发生妥协的恒定核心要素",
+    "_comment_invariant_core": "[必填] 用一句话概括——'无论写什么主题，作者始终不变的是[核心要素]'"
+  },
+  "integrated_imitation_guide": {
+    "_comment": "[必填] 综合模仿指南——从分析结果到可执行的仿写指令",
+    "key_style_elements": ["要素1", "要素2", "要素3"],
+    "_comment_key_style_elements": "[必填] 列出 3-5 个最核心的风格要素",
+    "imitation_priority": {
+      "essential": ["必须百分百还原的灵魂要素（通常在思维、结构层）"],
+      "_comment_essential": "[必填] 通常 2-3 个，必须包含思维模式",
+      "important": ["重要且高频的要素（通常在叙事、主要句式层）"],
+      "_comment_important": "[必填] 通常 3-5 个",
+      "optional": ["可选的、起到锦上添花作用的要素（通常在特征词汇、修辞层）"],
+      "_comment_optional": "[必填] 通常 2-4 个"
+    },
+    "execution_steps": {
+      "step_1": "Level 1：内化核心思维，确定切入视角",
+      "step_2": "Level 2：复刻结构大纲，规划节奏与段落截断",
+      "step_3": "Level 3：设定情感基调与读者对话定位",
+      "step_4": "Level 4：撰写初稿，严格控制段落与句式长短",
+      "step_5": "Level 4：融入特征词汇、口头禅与标志性修辞",
+      "step_6": "去 AI 感：扫描并替换所有 AI 套话",
+      "step_7": "Final Check：对照校验清单，进行双重保真与去噪过滤"
+    },
+    "adaptation_strategies": {
+      "new_topic_mapping": "当目标主题为全新领域时，风格融合与迁移的操作方法",
+      "_comment_new_topic_mapping": "[必填] 可执行的指令",
+      "field_migration": "跨行业写作时的保真策略",
+      "_comment_field_migration": "[必填] 可执行的指令",
+      "fidelity_hierarchy": "为保证最终阅读效果，当风格与新主题冲突时，舍微观保宏观的妥协顺序",
+      "_comment_fidelity_hierarchy": "[必填] 示例：'思维框架 > 结构模式 > 情感基调 > 语言风格 > 特征词汇'"
+    },
+    "avoidance_traps": [
+      "陷阱1：过度模仿词汇，导致缺乏逻辑支撑的空洞无物（表层模仿）",
+      "陷阱2：无视主题适配特征，在新语境下硬套公式（语境错位）",
+      "陷阱3：盲目照搬原文案例、论据等非风格成分（过度复制）",
+      "陷阱4：使用 AI 套话（值得注意的是、总而言之等）破坏仿写效果"
+    ]
+  }
+}

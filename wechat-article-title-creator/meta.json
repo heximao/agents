@@ -1,0 +1,20 @@
+{
+  "skill": {
+    "id": "local:公众号爆款标题创作",
+    "name": "公众号爆款标题创作",
+    "description": "该技能应在用户想要\"创建公众号标题\"、\"撰写爆款标题\"、\"生成微信文章标题\"、\"公众号选题标题\"或需要基于公众号传播逻辑进行高点击标题创作时使用。",
+    "directory": "公众号爆款标题创作",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1778465646,
+    "contentHash": "e3286bc05e684e34850172df67a505217e937139da2e931a111b7415f4ac1419",
+    "updatedAt": 0
+  },
+  "backupCreatedAt": 1779935017,
+  "sourcePath": "/Users/saibopika/.codex/skills/公众号爆款标题创作"
+}

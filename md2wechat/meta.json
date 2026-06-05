@@ -1,0 +1,20 @@
+{
+  "skill": {
+    "id": "local:md2wechat",
+    "name": "md2wechat",
+    "description": "Convert Markdown to WeChat Official Account HTML. Supports AI mode (free, themed layouts). Features writer style assistant, AI trace removal (humanizer), and draft upload.",
+    "directory": "md2wechat",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1778466342,
+    "contentHash": "bfcaa16c75bf3bc5185c249e92535b08044c2288493505aec135cfe6a1b361b1",
+    "updatedAt": 0
+  },
+  "backupCreatedAt": 1779935006,
+  "sourcePath": "/Users/saibopika/.codex/skills/md2wechat"
+}

@@ -1,0 +1,20 @@
+{
+  "skill": {
+    "id": "local:playwright-cli",
+    "name": "playwright-cli",
+    "description": "Automate browser interactions, test web pages and work with Playwright tests.",
+    "directory": "playwright-cli",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1778466072,
+    "contentHash": "0030912c6e82ae000ad23fd8e9ffb532b95231607f063504750c1c12921c0f6f",
+    "updatedAt": 0
+  },
+  "backupCreatedAt": 1779935008,
+  "sourcePath": "/Users/saibopika/.codex/skills/playwright-cli"
+}

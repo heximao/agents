@@ -1,0 +1,20 @@
+{
+  "skill": {
+    "id": "local:writing-rules",
+    "name": "Writing Hookify Rules",
+    "description": "This skill should be used when the user asks to \"create a hookify rule\", \"write a hook rule\", \"configure hookify\", \"add a hookify rule\", or needs guidance on hookify rule syntax and patterns.",
+    "directory": "writing-rules",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1778466118,
+    "contentHash": "abb7ae4200b85129905b9bac83dd1959662021efbbd4d25bba704e153060f15a",
+    "updatedAt": 0
+  },
+  "backupCreatedAt": 1779934945,
+  "sourcePath": "/Users/saibopika/.codex/skills/writing-rules"
+}

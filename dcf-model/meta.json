@@ -1,0 +1,20 @@
+{
+  "skill": {
+    "id": "local:dcf-model",
+    "name": "dcf-model",
+    "description": "Real DCF (Discounted Cash Flow) model creation for equity valuation. Retrieves financial data from SEC filings and analyst reports, builds comprehensive cash flow projections with proper WACC calculations, performs sensitivity analysis, and outputs professional Excel models with executive summaries. Use when users need to value a company using DCF methodology, request intrinsic value analysis, or ask for detailed financial modeling with growth projections and terminal value calculations.",
+    "directory": "dcf-model",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1778466196,
+    "contentHash": "1f65bd2d20efd52406f6adb469d19847e8f0426b73ce82640a77ea1996b99b18",
+    "updatedAt": 0
+  },
+  "backupCreatedAt": 1779934990,
+  "sourcePath": "/Users/saibopika/.codex/skills/dcf-model"
+}

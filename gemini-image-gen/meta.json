@@ -1,0 +1,18 @@
+{
+  "skill": {
+    "id": "local:Gemini AI 封面生图",
+    "name": "Gemini AI 封面生图",
+    "description": "当用户需要\"生成封面图片\"、\"AI 生图\"、\"cover image\"、\"用 Gemini 画图\"或需要为文章批量生成封面时使用该技能。通过 Gemini API（中转站）生成高质量封面图片。",
+    "directory": "gemini-image-gen",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1748592000,
+    "contentHash": "",
+    "updatedAt": 0
+  }
+}

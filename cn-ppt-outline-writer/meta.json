@@ -1,0 +1,20 @@
+{
+  "skill": {
+    "id": "local:cn-ppt-outline-writer",
+    "name": "cn-ppt-outline-writer",
+    "description": "This skill should be used when the user mentions \"做PPT\", \"PPT大纲\", \"汇报\", \"提案\", \"演讲稿\", \"幻灯片\", \"商业计划书\", \"述职报告\", \"工作汇报\", \"年终总结\", \"产品发布\", \"PPT结构\", \"PPT框架\", \"PPT内容\", \"写PPT\", \"帮我做PPT\", or needs PPT outline generation.",
+    "directory": "cn-ppt-outline-writer",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1778465646,
+    "contentHash": "ddd56b6a9ca8ee1cd749e20a4bf2e6f168df2a6256ddee0a2c1519b4f6781c40",
+    "updatedAt": 0
+  },
+  "backupCreatedAt": 1779934987,
+  "sourcePath": "/Users/saibopika/.codex/skills/cn-ppt-outline-writer"
+}

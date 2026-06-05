@@ -1,0 +1,20 @@
+{
+  "skill": {
+    "id": "local:prd-writing",
+    "name": "产品需求文档编写",
+    "description": "This skill should be used when the user wants to \"write product requirements document\", \"create PRD\", \"编写产品需求文档\", \"产品经理需求文档\", or needs help structuring and writing a professional PRD with functional descriptions, user journeys, and implementation logic.",
+    "directory": "prd-writing",
+    "apps": {
+      "claude": false,
+      "codex": false,
+      "gemini": false,
+      "opencode": false,
+      "hermes": false
+    },
+    "installedAt": 1778466072,
+    "contentHash": "784b02bab2c31d4dda77d1d636e56eb3f72d8a843db18313812db43ffed8e281",
+    "updatedAt": 0
+  },
+  "backupCreatedAt": 1779935015,
+  "sourcePath": "/Users/saibopika/.codex/skills/prd-writing"
+}
