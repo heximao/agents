@@ -1,0 +1,3 @@
+这是来自Github Anthropoic/skills的skill
+
+尽量不直接修改skill，如需修改则创建副本，并在新的skill中注明来源。
