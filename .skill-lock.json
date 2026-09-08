@@ -8,7 +8,55 @@
       "skillFolderHash": "",
       "installedAt": "2026-06-25T16:42:15.731Z",
       "updatedAt": "2026-06-25T16:42:15.731Z"
+    },
+    "orca-cli": {
+      "source": "stablyai/orca",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/stablyai/orca.git",
+      "skillPath": "skills/orca-cli/SKILL.md",
+      "skillFolderHash": "cdf89459f89dddf347ee2759ff884c369051f06a",
+      "installedAt": "2026-09-03T06:55:23.326Z",
+      "updatedAt": "2026-09-03T06:55:23.326Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "76a98a285cb0434f3d39e1a873823556330e398b",
+      "installedAt": "2026-09-03T06:55:27.984Z",
+      "updatedAt": "2026-09-03T06:55:27.984Z"
+    },
+    "orchestration": {
+      "source": "stablyai/orca",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/stablyai/orca.git",
+      "skillPath": "skills/orchestration/SKILL.md",
+      "skillFolderHash": "4199ec6988801dd491631706cba62631b4bed8fb",
+      "installedAt": "2026-09-03T07:10:34.662Z",
+      "updatedAt": "2026-09-03T07:10:34.662Z"
     }
   },
-  "dismissed": {}
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "antigravity-cli",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed",
+    "claude-code",
+    "openclaw",
+    "droid",
+    "hermes-agent"
+  ]
 }
