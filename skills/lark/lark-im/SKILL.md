@@ -12,6 +12,8 @@ metadata:
 
 **CRITICAL — 开始前 MUST 先用 Read 工具读取 [`../lark-shared/SKILL.md`](../lark-shared/SKILL.md)，其中包含认证、权限处理**
 
+**工具分流**：如果任务只是把一段现成文本推送到飞书（通知、报告结果、cron 产出），且 Hermes gateway 已配置 feishu 平台，优先 `hermes send --to feishu:<chat_id>`——它复用 gateway 凭据，无 LLM、无 agent loop，也不涉及 lark-cli 的身份/scope 问题（`hermes send --list feishu` 列出可用 target）。lark-cli 用于需要 user/bot 身份的 IM API 操作：读消息、搜索、群管理、加急、卡片消息等。
+
 ## Core Concepts
 
 - **Message**: A single message in a chat, identified by `message_id` (om_xxx). Supports types: text, post, image, file, audio, video, sticker, interactive (card), share_chat, share_user, merge_forward, etc.
