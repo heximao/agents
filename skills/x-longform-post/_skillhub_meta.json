@@ -1,0 +1,20 @@
+{
+  "name": "x-longform-post",
+  "installedAt": 1780629215083,
+  "source": "marketplace",
+  "version": "1.0.2",
+  "skillId": "skill_2053083654722506752",
+  "examples_zh": [
+    "帮我写一篇 X 上的长文帖子",
+    "用创始人视角写一条反直觉的推特长文",
+    "写一个带数据和 ASCII 图表的推特思考帖"
+  ],
+  "examples_en": [
+    "Write a long-form X post on this topic",
+    "Draft a contrarian founder-voice thread for Twitter",
+    "Create a data-backed X article with ASCII diagrams"
+  ],
+  "iconSource": "letter:auto",
+  "installedContentHash": "sha256:1d00ae25b4faefe8f8487bb71d75584ed0e5b46f9689a0cb0857b692ba24e707",
+  "skillName": "x-longform-post"
+}

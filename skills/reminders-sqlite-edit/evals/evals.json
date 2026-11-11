@@ -1,0 +1,78 @@
+{
+  "skill_name": "reminders-sqlite-edit",
+  "note": "本 skill 的输出会改写用户本机真实数据库，因此对活跃主库的操作全部限定为 dry-run / 只读，禁止子代理对主库执行 --apply。允许在 SQLite 全库副本（--store /tmp/...）上做 --apply + verify.py 端到端演练。verify.py 与 verify_export.py 都是纯只读；verify_export.py 调用的 remindctl all --json 是只读导出，不属于「用 remindctl 写入」。",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "从 life 列表找 20 个标题为「喂猫」的提醒事项，把创建时间改成 2026 年 11 月 1-5 号的 07/11/17/21 点，截止时间 08/12/18/22 点，完成时间 07:30/11:30/17:30/21:30。先给我一份会改什么的对照，不要真的写入。",
+      "expected_output": "加载本 skill，确认完全磁盘访问，定位活跃 store，按 list=life (Z_PK=2) + title 找到目标，生成计划 JSON 并跑 edit_times.py 的 dry-run；输出逐条旧值→新值对照、联动闹钟/痕迹条数、全库行数，明确标注未写入。不调用 remindctl，不写库。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "检查这 20 个事项还有没有其他遗留问题。我的目的是实现：当天创建了事项，后续没有再修改，且在截止时间之前完成。",
+      "expected_output": "加载本 skill 并跑 verify.py（纯只读），逐条核对创建=修改、创建<完成<截止、同一天(北京)、ZCOMPLETED=1、ZDISPLAYDATEDATE=ZDUEDATE、闹钟=截止(组件+绝对时间戳双重校验)、开始时间/横幅/确认痕迹为空、非全天、无循环关联；给出未通过项清单、integrity_check 与全库行数。识别到遗留时先备份+导出原值再修复，不擅自扩大范围。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "闹钟时间的规则应该是与截止时间相同。帮我核对一下这批事项的闹钟是不是都对齐了，顺便看看循环还有没有残留。",
+      "expected_output": "加载本 skill，用 rdb.py 的闹钟关联链 (Z_ENT=16/ZREMINDER → ZTRIGGER → Z_ENT=18/ZDATECOMPONENTSDATA) 做只读复核；对每条同时校验日历组件与按闹钟 JSON 自身 timeZone.identifier 回算的绝对时间戳是否等于 ZDUEDATE（不能硬编码 UTC+8，否则时区错位测不出来），输出 N/N 对齐；再查 Z_ENT=35 AND ZREMINDER4=<pk> AND ZMARKEDFORDELETION=0 的活跃循环残留数。说明系统标记删除 (ZMARKEDFORDELETION=1) 的行不算残留、不要删除。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "在 life 列表分别找 7 个「modelscopecn签到」「modelscopeai签到」「trae签到」「workbuddy签到」，不能用有循环的，一共 28 个。创建时间和修改时间改成 1-7 号的 07:00，截止时间 21:00，完成时间 10:00，闹钟提醒时间 21:00。不要弄错时区与 UTC。先给我 dry-run 对照，别写主库。",
+      "expected_output": "加载本 skill，用 rdb.py --find --titles ... --exclude-recurring --limit 7 在选目标阶段排除循环；生成每个 target 自带 title 的 28 条计划，rules.alarm='21:00'、last_modified='creation'、all_day='off'。dry-run 报告应显示 0 前置问题、28 条主表改写、全天/时区校正、56 条新建 alarm/trigger INSERT 与 1 条 Z_PRIMARYKEY 推进。说明北京 07:00 == 前一天 23:00 UTC 属正常，日界必须用 to_bj(ts).date()。不写主库。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "帮我把 life 列表这 10 个「读书」事项的创建/修改时间改成 11 月 3 号 08:00，截止时间 20:00，完成时间 19:00。没事别动闹钟以外的东西，先 dry-run。",
+      "expected_output": "对话未提及闹钟时间，因此计划里 rules.alarm 保持默认 'due'（闹钟时间 = 截止时间），不写 'keep' 也不省略后让闹钟停在旧日期。dry-run 中闹钟目标时刻应显示为 20:00，verify.py 按 due 规则做组件 + 绝对时间戳双重校验。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "这批签到事项好像是全天提醒，我只要改时间，别把时区搞乱。只读检查一下现在全天标记和显示时区分别是什么，以及闹钟有没有对象。",
+      "expected_output": "纯只读：逐条列出 ZALLDAY / ZDISPLAYDATEISALLDAY / ZDISPLAYDATETIMEZONE / ZTIMEZONE / ZDISPLAYDATEUPDATEDFORSECONDSFROMGMT 和 alarm_chain 数量。必须指出 ZDISPLAYDATETIMEZONE 与 ZTIMEZONE 是两个独立列，漏写后者会让导出的 dueDate 早 8 小时且 SQLite 体检看不出来。说明 rules.all_day='off' 会写全部 5 列（Asia/Singapore + 28800），且没有闹钟对象时需要新建 REMCDAlarm + REMCDAlarmDateTrigger 并推进 Z_PRIMARYKEY.Z_ENT=14 的 Z_MAX。不修改任何数据。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "life 列表里有一批已经有闹钟的事项，其中几个闹钟的时区是 America/Los_Angeles 或压根没有 timeZone。把它们的截止时间改成 11 月 1 号 08:00，先 dry-run，别弄错时区。",
+      "expected_output": "加载本 skill，dry-run 报告必须打印「闹钟时区归一：N 个」，说明 align_alarm_components() 会把非 UTC+8 / 缺失 / 非法的 timeZone 统一写成 Asia/Shanghai，已有 Asia/Singapore 等 UTC+8 标识保留；不能只覆盖日历组件而保留原时区标识（否则按洛杉矶时间解释会产生 15 小时错位）。verify.py 应按闹钟 JSON 自身时区回算绝对时间戳做独立第二重校验，且 alarm_ok 不得把时区错位计入对齐。不写主库。",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "你之前说 20 条喂猫事项「20/20 闹钟触发时间还是旧绝对日期」，后来又说 28 条签到事项「基本都没有闹钟」，这不是自相矛盾吗？remindctl 导出的 json 里还有个 alarmDate 字段。把所有对话和 skill 文件重读一遍，把闹钟问题彻底解决掉，保证以后 agent 不会再搞错。",
+      "expected_output": "先澄清不是矛盾而是两批不同事项：喂猫是具体时刻事项（ZALLDAY=0、ZTIMEZONE 已设），每条带 REMCDAlarm，快照 alarmDate 61/61 非空；签到是全天事项（ZALLDAY=1、ZTIMEZONE 为 NULL），0 个 REMCDAlarm，改动前快照 alarmDate 0/28 非空。说明 alarmDate 来自 EKAlarm.absoluteDate，真源是 REMCDAlarm → REMCDAlarmDateTrigger.ZDATECOMPONENTSDATA，没有对象时为 null，且项目快照由 scan_reminders.py 原样搬运该字段、分析层只读快照。必须识别出「只跑 sqlite 层 verify.py 会假阳性」，并补上 verify_export.py 导出层交叉验证（核对 alarmDate 非空、等于目标绝对时刻、闹钟=截止时 alarmDate==dueDate）。同时查出 ZTIMEZONE 漏写导致导出 dueDate 早 8 小时的实测缺陷并修复 rdb.time_specific_columns()。",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "库里体检全绿，但今天 13:00 的快照里这几条事项 alarmDate 还是 null，或者 alarmDate 和 dueDate 差 8 小时。只读帮我查清楚原因，别改数据。",
+      "expected_output": "加载本 skill，纯只读。分别用 rdb.alarm_chain() 查 REMCDAlarm 对象数量、用 verify_export.py --export <快照> 对照导出层。alarmDate 为 null 的根因是事项没有 REMCDAlarm（全天类事项常见）；差 8 小时的根因是 ZTIMEZONE 为 NULL 导致导出 dueDate 早 8 小时，而 alarmDate 仍正确。说明这两类问题 SQLite 层 verify.py 测不出来，必须用导出层交叉验证；给出修复方向（新建闹钟对象 / 补齐 ZTIMEZONE 等 5 列）但不执行写入。",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "改完之后帮我确认快照口径对得上，尤其是闹钟。只读，别写库。",
+      "expected_output": "成对执行两个只读脚本：verify.py --plan（SQLite 十二项语义）与 verify_export.py --plan（remindctl all --json 导出层 alarmDate/dueDate/creationDate/lastModifiedDate）。两个都要报 0 未通过；verify_export.py 还要确认 rule 等于截止时刻时快照层 alarmDate == dueDate。说明 remindctl all --json 是只读导出、能直接读到磁盘新值，无需重启 remindd。不调用任何写入。",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "用 skill 读取未完成的 life list 中的「铺床」的截止日期，根据截止日期，将创建日期和最后修改日期改为当天的 7 点。",
+      "expected_output": "识别为最小改动模式：用户只要两列，事项仍未完成，edit_times.py 会连带改截止/完成/完成标记/全天/时区/闹钟/痕迹，越过范围。加载 skill 后定位活跃库，只读列出 life(Z_PK=2) 中 ZCOMPLETED=0 的「铺床」共 22 条及其截止日期（ZDUEDATE 均为当天 08:00 北京），用 edit_creation.py 计划 {list:'life',title:'铺床',time:'07:00',incomplete_only:true}，日期按 to_bj(ZDUEDATE).date() 取北京自然日，目标值 rdb.creation_from_due()。闹钟 22/22 已等于截止时间，按默认规则无需改动；ZSTARTDATE 早于新创建时间的 5 条只列为提示、不擅自清理。先 dry-run、副本演练（--verify --no-export）、备份，再 --apply 单事务写 22 条两列 UPDATE；主库验收跑 edit_creation.py --verify（含差分审计与导出层）与 verify_export.py。verify.py 的已完成语义体检不适用于未完成事项，不拿它验收。",
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "这批「铺床」的截止日期都是 8 点，把创建时间改成截止当天 7 点。只改创建时间，其它别动。先给我对照，别写库。",
+      "expected_output": "纯 dry-run，不写库。说明本次只改创建与最后修改（用户说「创建时间」时默认「创建=修改」口径需在报告里写清；若严格只要一列则计划需支持单列）。逐条打印截止日期、旧创建/旧修改、新值 07:00 北京。指出全天事项 ZDUEDATE 是当天 08:00 北京 / 00:00 UTC，日期必须按北京自然日取，不能用 ts//86400。说明不动 ZDUEDATE、ZCOMPLETED、ZCOMPLETIONDATE、全天/时区列、闹钟与横幅/开始痕迹。",
+      "files": []
+    }
+  ]
+}

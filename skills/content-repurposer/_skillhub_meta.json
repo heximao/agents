@@ -1,0 +1,20 @@
+{
+  "name": "内容分发",
+  "installedAt": 1780629214596,
+  "source": "marketplace",
+  "version": "1.1.0",
+  "skillId": "skill_2053081498548994048",
+  "examples_zh": [
+    "把这篇博客改成微信公众号文章格式",
+    "把这篇文章拆解为微博短文和抖音脚本",
+    "把这段视频转录改写为小红书笔记"
+  ],
+  "examples_en": [
+    "Transform this blog post for Xiaohongshu",
+    "Break this article into short social posts and video scripts",
+    "Rewrite this video transcript as a platform-optimized post"
+  ],
+  "iconSource": "letter:auto",
+  "installedContentHash": "sha256:8ac158ffe82e91bfaaa60838ea39bd0fd4e996bae47d019db9c9002ec1f91e91",
+  "skillName": "content-repurposer"
+}

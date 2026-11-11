@@ -1,0 +1,917 @@
+{
+  "fetch_date": "2026-05-21",
+  "fetch_timestamp": "2026-05-21T12:05:36.423691",
+  "source": "东方财富 RPT_BOND_CB_LIST",
+  "total_count": 100,
+  "field_labels": {
+    "SECURITY_CODE": "债券代码",
+    "SECURITY_NAME_ABBR": "债券简称",
+    "RATING": "信用评级",
+    "PUBLIC_START_DATE": "申购日期",
+    "LISTING_DATE": "上市日期",
+    "TRANSFER_VALUE": "转股价值",
+    "TRANSFER_PREMIUM_RATIO": "转股溢价率(%)"
+  },
+  "data": [
+    {
+      "SECURITY_CODE": "123269",
+      "SECURITY_NAME_ABBR": "金杨转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2026-04-20 00:00:00",
+      "LISTING_DATE": "2026-05-11 00:00:00",
+      "TRANSFER_VALUE": 109.3216,
+      "TRANSFER_PREMIUM_RATIO": 57.89
+    },
+    {
+      "SECURITY_CODE": "123268",
+      "SECURITY_NAME_ABBR": "本川转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2026-04-17 00:00:00",
+      "LISTING_DATE": "2026-05-07 00:00:00",
+      "TRANSFER_VALUE": 119.5177,
+      "TRANSFER_PREMIUM_RATIO": 59.61
+    },
+    {
+      "SECURITY_CODE": "113702",
+      "SECURITY_NAME_ABBR": "斯达转债",
+      "RATING": "AA+sti",
+      "PUBLIC_START_DATE": "2026-04-16 00:00:00",
+      "LISTING_DATE": "2026-05-11 00:00:00",
+      "TRANSFER_VALUE": 120.6078,
+      "TRANSFER_PREMIUM_RATIO": 59.75
+    },
+    {
+      "SECURITY_CODE": "123267",
+      "SECURITY_NAME_ABBR": "珂玛转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2026-04-16 00:00:00",
+      "LISTING_DATE": "2026-05-13 00:00:00",
+      "TRANSFER_VALUE": 122.2097,
+      "TRANSFER_PREMIUM_RATIO": 91.15
+    },
+    {
+      "SECURITY_CODE": "118067",
+      "SECURITY_NAME_ABBR": "上26转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2026-03-18 00:00:00",
+      "LISTING_DATE": "2026-04-14 00:00:00",
+      "TRANSFER_VALUE": 85.4908,
+      "TRANSFER_PREMIUM_RATIO": 72.28
+    },
+    {
+      "SECURITY_CODE": "123266",
+      "SECURITY_NAME_ABBR": "博士转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2026-03-18 00:00:00",
+      "LISTING_DATE": "2026-04-07 00:00:00",
+      "TRANSFER_VALUE": 86.1978,
+      "TRANSFER_PREMIUM_RATIO": 77.35
+    },
+    {
+      "SECURITY_CODE": "127113",
+      "SECURITY_NAME_ABBR": "长高转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2026-03-09 00:00:00",
+      "LISTING_DATE": "2026-03-30 00:00:00",
+      "TRANSFER_VALUE": 106.0854,
+      "TRANSFER_PREMIUM_RATIO": 55.02
+    },
+    {
+      "SECURITY_CODE": "113701",
+      "SECURITY_NAME_ABBR": "祥和转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2026-03-03 00:00:00",
+      "LISTING_DATE": "2026-03-26 00:00:00",
+      "TRANSFER_VALUE": 77.2627,
+      "TRANSFER_PREMIUM_RATIO": 86.15
+    },
+    {
+      "SECURITY_CODE": "118066",
+      "SECURITY_NAME_ABBR": "统联转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2026-03-02 00:00:00",
+      "LISTING_DATE": "2026-03-20 00:00:00",
+      "TRANSFER_VALUE": 90.8007,
+      "TRANSFER_PREMIUM_RATIO": 72.79
+    },
+    {
+      "SECURITY_CODE": "113700",
+      "SECURITY_NAME_ABBR": "海天转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2026-02-05 00:00:00",
+      "LISTING_DATE": "2026-03-12 00:00:00",
+      "TRANSFER_VALUE": 69.2492,
+      "TRANSFER_PREMIUM_RATIO": 99.15
+    },
+    {
+      "SECURITY_CODE": "110100",
+      "SECURITY_NAME_ABBR": "龙建转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2026-01-22 00:00:00",
+      "LISTING_DATE": "2026-02-12 00:00:00",
+      "TRANSFER_VALUE": 82.5054,
+      "TRANSFER_PREMIUM_RATIO": 63.75
+    },
+    {
+      "SECURITY_CODE": "118065",
+      "SECURITY_NAME_ABBR": "艾为转债",
+      "RATING": "AA+sti",
+      "PUBLIC_START_DATE": "2026-01-22 00:00:00",
+      "LISTING_DATE": "2026-02-26 00:00:00",
+      "TRANSFER_VALUE": 92.5968,
+      "TRANSFER_PREMIUM_RATIO": 67.62
+    },
+    {
+      "SECURITY_CODE": "127112",
+      "SECURITY_NAME_ABBR": "尚太转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2026-01-16 00:00:00",
+      "LISTING_DATE": "2026-02-05 00:00:00",
+      "TRANSFER_VALUE": 106.4337,
+      "TRANSFER_PREMIUM_RATIO": 51.43
+    },
+    {
+      "SECURITY_CODE": "123265",
+      "SECURITY_NAME_ABBR": "耐普转02",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2026-01-16 00:00:00",
+      "LISTING_DATE": "2026-01-30 00:00:00",
+      "TRANSFER_VALUE": 89.1186,
+      "TRANSFER_PREMIUM_RATIO": 69.91
+    },
+    {
+      "SECURITY_CODE": "118064",
+      "SECURITY_NAME_ABBR": "联瑞转债",
+      "RATING": "AAsti",
+      "PUBLIC_START_DATE": "2026-01-08 00:00:00",
+      "LISTING_DATE": "2026-01-28 00:00:00",
+      "TRANSFER_VALUE": 191.9748,
+      "TRANSFER_PREMIUM_RATIO": 45.64
+    },
+    {
+      "SECURITY_CODE": "123264",
+      "SECURITY_NAME_ABBR": "双乐转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-12-26 00:00:00",
+      "LISTING_DATE": "2026-01-16 00:00:00",
+      "TRANSFER_VALUE": 74.3869,
+      "TRANSFER_PREMIUM_RATIO": 87.64
+    },
+    {
+      "SECURITY_CODE": "118063",
+      "SECURITY_NAME_ABBR": "金05转债",
+      "RATING": "AA+sti",
+      "PUBLIC_START_DATE": "2025-12-25 00:00:00",
+      "LISTING_DATE": "2026-01-14 00:00:00",
+      "TRANSFER_VALUE": 112.1558,
+      "TRANSFER_PREMIUM_RATIO": 65.48
+    },
+    {
+      "SECURITY_CODE": "123263",
+      "SECURITY_NAME_ABBR": "鼎捷转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-12-15 00:00:00",
+      "LISTING_DATE": "2025-12-31 00:00:00",
+      "TRANSFER_VALUE": 95.3836,
+      "TRANSFER_PREMIUM_RATIO": 66.07
+    },
+    {
+      "SECURITY_CODE": "118062",
+      "SECURITY_NAME_ABBR": "天准转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-12-12 00:00:00",
+      "LISTING_DATE": "2025-12-31 00:00:00",
+      "TRANSFER_VALUE": 179.7416,
+      "TRANSFER_PREMIUM_RATIO": 39.2
+    },
+    {
+      "SECURITY_CODE": "123262",
+      "SECURITY_NAME_ABBR": "神宇转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-12-11 00:00:00",
+      "LISTING_DATE": "2025-12-30 00:00:00",
+      "TRANSFER_VALUE": 80.0361,
+      "TRANSFER_PREMIUM_RATIO": 81.29
+    },
+    {
+      "SECURITY_CODE": "111024",
+      "SECURITY_NAME_ABBR": "澳弘转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-12-11 00:00:00",
+      "LISTING_DATE": "2026-01-16 00:00:00",
+      "TRANSFER_VALUE": 112.1915,
+      "TRANSFER_PREMIUM_RATIO": 56.38
+    },
+    {
+      "SECURITY_CODE": "123261",
+      "SECURITY_NAME_ABBR": "普联转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2025-12-05 00:00:00",
+      "LISTING_DATE": "2025-12-22 00:00:00",
+      "TRANSFER_VALUE": 100.9252,
+      "TRANSFER_PREMIUM_RATIO": 57.56
+    },
+    {
+      "SECURITY_CODE": "118061",
+      "SECURITY_NAME_ABBR": "茂莱转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2025-11-21 00:00:00",
+      "LISTING_DATE": "2025-12-10 00:00:00",
+      "TRANSFER_VALUE": 153.6591,
+      "TRANSFER_PREMIUM_RATIO": 61.26
+    },
+    {
+      "SECURITY_CODE": "118060",
+      "SECURITY_NAME_ABBR": "瑞可转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-11-14 00:00:00",
+      "LISTING_DATE": "2025-12-12 00:00:00",
+      "TRANSFER_VALUE": 188.6256,
+      "TRANSFER_PREMIUM_RATIO": 32.87
+    },
+    {
+      "SECURITY_CODE": "123260",
+      "SECURITY_NAME_ABBR": "卓镁转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2025-11-07 00:00:00",
+      "LISTING_DATE": "2025-11-24 00:00:00",
+      "TRANSFER_VALUE": 89.4264,
+      "TRANSFER_PREMIUM_RATIO": 77.79
+    },
+    {
+      "SECURITY_CODE": "118059",
+      "SECURITY_NAME_ABBR": "颀中转债",
+      "RATING": "AA+sti",
+      "PUBLIC_START_DATE": "2025-11-03 00:00:00",
+      "LISTING_DATE": "2025-11-21 00:00:00",
+      "TRANSFER_VALUE": 109.8909,
+      "TRANSFER_PREMIUM_RATIO": 52.45
+    },
+    {
+      "SECURITY_CODE": "123259",
+      "SECURITY_NAME_ABBR": "锦浪转02",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-10-17 00:00:00",
+      "LISTING_DATE": "2025-11-06 00:00:00",
+      "TRANSFER_VALUE": 152.8463,
+      "TRANSFER_PREMIUM_RATIO": 32.16
+    },
+    {
+      "SECURITY_CODE": "110099",
+      "SECURITY_NAME_ABBR": "福能转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2025-10-13 00:00:00",
+      "LISTING_DATE": "2025-10-30 00:00:00",
+      "TRANSFER_VALUE": 110.3659,
+      "TRANSFER_PREMIUM_RATIO": 33.14
+    },
+    {
+      "SECURITY_CODE": "113699",
+      "SECURITY_NAME_ABBR": "金25转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-09-26 00:00:00",
+      "LISTING_DATE": "2025-10-27 00:00:00",
+      "TRANSFER_VALUE": 101.7176,
+      "TRANSFER_PREMIUM_RATIO": 61.33
+    },
+    {
+      "SECURITY_CODE": "113697",
+      "SECURITY_NAME_ABBR": "应流转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2025-09-19 00:00:00",
+      "LISTING_DATE": "2025-10-22 00:00:00",
+      "TRANSFER_VALUE": 241.4834,
+      "TRANSFER_PREMIUM_RATIO": 27.26
+    },
+    {
+      "SECURITY_CODE": "123258",
+      "SECURITY_NAME_ABBR": "胜蓝转02",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-08-28 00:00:00",
+      "LISTING_DATE": "2025-09-10 00:00:00",
+      "TRANSFER_VALUE": 186.3753,
+      "TRANSFER_PREMIUM_RATIO": 35.0
+    },
+    {
+      "SECURITY_CODE": "127111",
+      "SECURITY_NAME_ABBR": "金威转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-08-20 00:00:00",
+      "LISTING_DATE": "2025-09-08 00:00:00",
+      "TRANSFER_VALUE": 82.5932,
+      "TRANSFER_PREMIUM_RATIO": 64.03
+    },
+    {
+      "SECURITY_CODE": "113698",
+      "SECURITY_NAME_ABBR": "凯众转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-08-15 00:00:00",
+      "LISTING_DATE": "2025-09-10 00:00:00",
+      "TRANSFER_VALUE": 118.9953,
+      "TRANSFER_PREMIUM_RATIO": 44.59
+    },
+    {
+      "SECURITY_CODE": "118058",
+      "SECURITY_NAME_ABBR": "微导转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-08-06 00:00:00",
+      "LISTING_DATE": "2025-08-27 00:00:00",
+      "TRANSFER_VALUE": 282.5439,
+      "TRANSFER_PREMIUM_RATIO": 31.51
+    },
+    {
+      "SECURITY_CODE": "127110",
+      "SECURITY_NAME_ABBR": "广核转债",
+      "RATING": "AAA",
+      "PUBLIC_START_DATE": "2025-07-09 00:00:00",
+      "LISTING_DATE": "2025-07-25 00:00:00",
+      "TRANSFER_VALUE": 122.0708,
+      "TRANSFER_PREMIUM_RATIO": 14.79
+    },
+    {
+      "SECURITY_CODE": "111023",
+      "SECURITY_NAME_ABBR": "利柏转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-07-03 00:00:00",
+      "LISTING_DATE": "2025-07-22 00:00:00",
+      "TRANSFER_VALUE": 139.4563,
+      "TRANSFER_PREMIUM_RATIO": 5.12
+    },
+    {
+      "SECURITY_CODE": "113696",
+      "SECURITY_NAME_ABBR": "伯25转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-07-01 00:00:00",
+      "LISTING_DATE": "2025-07-28 00:00:00",
+      "TRANSFER_VALUE": 95.1934,
+      "TRANSFER_PREMIUM_RATIO": 51.0
+    },
+    {
+      "SECURITY_CODE": "118057",
+      "SECURITY_NAME_ABBR": "甬矽转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2025-06-26 00:00:00",
+      "LISTING_DATE": "2025-07-16 00:00:00",
+      "TRANSFER_VALUE": 194.9577,
+      "TRANSFER_PREMIUM_RATIO": 1.38
+    },
+    {
+      "SECURITY_CODE": "113695",
+      "SECURITY_NAME_ABBR": "华辰转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2025-06-20 00:00:00",
+      "LISTING_DATE": "2025-07-10 00:00:00",
+      "TRANSFER_VALUE": 127.9387,
+      "TRANSFER_PREMIUM_RATIO": 20.82
+    },
+    {
+      "SECURITY_CODE": "111022",
+      "SECURITY_NAME_ABBR": "锡振转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-06-18 00:00:00",
+      "LISTING_DATE": "2025-07-14 00:00:00",
+      "TRANSFER_VALUE": 114.0459,
+      "TRANSFER_PREMIUM_RATIO": 38.89
+    },
+    {
+      "SECURITY_CODE": "123257",
+      "SECURITY_NAME_ABBR": "安克转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2025-06-16 00:00:00",
+      "LISTING_DATE": "2025-07-04 00:00:00",
+      "TRANSFER_VALUE": 119.5098,
+      "TRANSFER_PREMIUM_RATIO": 32.61
+    },
+    {
+      "SECURITY_CODE": "127109",
+      "SECURITY_NAME_ABBR": "电化转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-06-16 00:00:00",
+      "LISTING_DATE": "2025-07-04 00:00:00",
+      "TRANSFER_VALUE": 142.9703,
+      "TRANSFER_PREMIUM_RATIO": 24.76
+    },
+    {
+      "SECURITY_CODE": "118056",
+      "SECURITY_NAME_ABBR": "路维转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-06-11 00:00:00",
+      "LISTING_DATE": "2025-07-10 00:00:00",
+      "TRANSFER_VALUE": 221.9266,
+      "TRANSFER_PREMIUM_RATIO": 31.71
+    },
+    {
+      "SECURITY_CODE": "123256",
+      "SECURITY_NAME_ABBR": "恒帅转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2025-05-29 00:00:00",
+      "LISTING_DATE": "2025-06-17 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "118055",
+      "SECURITY_NAME_ABBR": "伟测转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-04-09 00:00:00",
+      "LISTING_DATE": "2025-04-30 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "113694",
+      "SECURITY_NAME_ABBR": "清源转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2025-04-08 00:00:00",
+      "LISTING_DATE": "2025-04-25 00:00:00",
+      "TRANSFER_VALUE": 92.224,
+      "TRANSFER_PREMIUM_RATIO": 49.47
+    },
+    {
+      "SECURITY_CODE": "118054",
+      "SECURITY_NAME_ABBR": "安集转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-04-07 00:00:00",
+      "LISTING_DATE": "2025-04-25 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123255",
+      "SECURITY_NAME_ABBR": "鼎龙转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-04-02 00:00:00",
+      "LISTING_DATE": "2025-04-23 00:00:00",
+      "TRANSFER_VALUE": 266.5379,
+      "TRANSFER_PREMIUM_RATIO": 32.93
+    },
+    {
+      "SECURITY_CODE": "127108",
+      "SECURITY_NAME_ABBR": "太能转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2025-03-28 00:00:00",
+      "LISTING_DATE": "2025-04-16 00:00:00",
+      "TRANSFER_VALUE": 106.6667,
+      "TRANSFER_PREMIUM_RATIO": 28.86
+    },
+    {
+      "SECURITY_CODE": "123254",
+      "SECURITY_NAME_ABBR": "亿纬转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2025-03-24 00:00:00",
+      "LISTING_DATE": "2025-04-11 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "113693",
+      "SECURITY_NAME_ABBR": "志邦转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-03-18 00:00:00",
+      "LISTING_DATE": "2025-04-08 00:00:00",
+      "TRANSFER_VALUE": 70.1389,
+      "TRANSFER_PREMIUM_RATIO": 81.53
+    },
+    {
+      "SECURITY_CODE": "118053",
+      "SECURITY_NAME_ABBR": "正帆转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2025-03-18 00:00:00",
+      "LISTING_DATE": "2025-04-03 00:00:00",
+      "TRANSFER_VALUE": 124.1873,
+      "TRANSFER_PREMIUM_RATIO": 27.43
+    },
+    {
+      "SECURITY_CODE": "118052",
+      "SECURITY_NAME_ABBR": "浩瀚转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2025-03-13 00:00:00",
+      "LISTING_DATE": "2025-04-07 00:00:00",
+      "TRANSFER_VALUE": 106.9662,
+      "TRANSFER_PREMIUM_RATIO": 44.98
+    },
+    {
+      "SECURITY_CODE": "123253",
+      "SECURITY_NAME_ABBR": "永贵转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-03-13 00:00:00",
+      "LISTING_DATE": "2025-03-28 00:00:00",
+      "TRANSFER_VALUE": 137.1366,
+      "TRANSFER_PREMIUM_RATIO": 5.25
+    },
+    {
+      "SECURITY_CODE": "113070",
+      "SECURITY_NAME_ABBR": "渝水转债",
+      "RATING": "AAA",
+      "PUBLIC_START_DATE": "2025-01-09 00:00:00",
+      "LISTING_DATE": "2025-02-13 00:00:00",
+      "TRANSFER_VALUE": 88.7967,
+      "TRANSFER_PREMIUM_RATIO": 45.42
+    },
+    {
+      "SECURITY_CODE": "123252",
+      "SECURITY_NAME_ABBR": "银邦转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2025-01-07 00:00:00",
+      "LISTING_DATE": "2025-01-24 00:00:00",
+      "TRANSFER_VALUE": 107.8337,
+      "TRANSFER_PREMIUM_RATIO": 40.92
+    },
+    {
+      "SECURITY_CODE": "110098",
+      "SECURITY_NAME_ABBR": "南药转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2024-12-25 00:00:00",
+      "LISTING_DATE": "2025-01-20 00:00:00",
+      "TRANSFER_VALUE": 99.6094,
+      "TRANSFER_PREMIUM_RATIO": 38.69
+    },
+    {
+      "SECURITY_CODE": "123251",
+      "SECURITY_NAME_ABBR": "华医转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-12-23 00:00:00",
+      "LISTING_DATE": "2025-01-09 00:00:00",
+      "TRANSFER_VALUE": 329.2466,
+      "TRANSFER_PREMIUM_RATIO": 12.51
+    },
+    {
+      "SECURITY_CODE": "118051",
+      "SECURITY_NAME_ABBR": "皓元转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-11-28 00:00:00",
+      "LISTING_DATE": "2024-12-19 00:00:00",
+      "TRANSFER_VALUE": 191.747,
+      "TRANSFER_PREMIUM_RATIO": 18.34
+    },
+    {
+      "SECURITY_CODE": "127107",
+      "SECURITY_NAME_ABBR": "领益转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2024-11-18 00:00:00",
+      "LISTING_DATE": "2024-12-06 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123250",
+      "SECURITY_NAME_ABBR": "嘉益转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-11-07 00:00:00",
+      "LISTING_DATE": "2024-11-26 00:00:00",
+      "TRANSFER_VALUE": 51.883,
+      "TRANSFER_PREMIUM_RATIO": 149.51
+    },
+    {
+      "SECURITY_CODE": "113692",
+      "SECURITY_NAME_ABBR": "保隆转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-10-31 00:00:00",
+      "LISTING_DATE": "2024-11-27 00:00:00",
+      "TRANSFER_VALUE": 90.7012,
+      "TRANSFER_PREMIUM_RATIO": 51.47
+    },
+    {
+      "SECURITY_CODE": "113691",
+      "SECURITY_NAME_ABBR": "和邦转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-10-28 00:00:00",
+      "LISTING_DATE": "2024-11-19 00:00:00",
+      "TRANSFER_VALUE": 133.0,
+      "TRANSFER_PREMIUM_RATIO": 22.48
+    },
+    {
+      "SECURITY_CODE": "123249",
+      "SECURITY_NAME_ABBR": "英搏转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-10-24 00:00:00",
+      "LISTING_DATE": "2024-11-11 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "110097",
+      "SECURITY_NAME_ABBR": "天润转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-10-24 00:00:00",
+      "LISTING_DATE": "2024-11-15 00:00:00",
+      "TRANSFER_VALUE": 109.7442,
+      "TRANSFER_PREMIUM_RATIO": 29.81
+    },
+    {
+      "SECURITY_CODE": "113690",
+      "SECURITY_NAME_ABBR": "豪24转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-10-23 00:00:00",
+      "LISTING_DATE": "2024-11-20 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "113689",
+      "SECURITY_NAME_ABBR": "洛凯转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-10-17 00:00:00",
+      "LISTING_DATE": "2024-11-11 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "113688",
+      "SECURITY_NAME_ABBR": "国检转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2024-10-17 00:00:00",
+      "LISTING_DATE": "2024-11-12 00:00:00",
+      "TRANSFER_VALUE": 107.9755,
+      "TRANSFER_PREMIUM_RATIO": 34.9
+    },
+    {
+      "SECURITY_CODE": "118050",
+      "SECURITY_NAME_ABBR": "航宇转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-08-21 00:00:00",
+      "LISTING_DATE": "2024-09-10 00:00:00",
+      "TRANSFER_VALUE": 273.7179,
+      "TRANSFER_PREMIUM_RATIO": 22.04
+    },
+    {
+      "SECURITY_CODE": "123248",
+      "SECURITY_NAME_ABBR": "恒辉转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-08-21 00:00:00",
+      "LISTING_DATE": "2024-09-12 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123247",
+      "SECURITY_NAME_ABBR": "万凯转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-08-16 00:00:00",
+      "LISTING_DATE": "2024-09-05 00:00:00",
+      "TRANSFER_VALUE": 247.3451,
+      "TRANSFER_PREMIUM_RATIO": 17.12
+    },
+    {
+      "SECURITY_CODE": "123246",
+      "SECURITY_NAME_ABBR": "远信转债",
+      "RATING": "A",
+      "PUBLIC_START_DATE": "2024-08-16 00:00:00",
+      "LISTING_DATE": "2024-09-03 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123245",
+      "SECURITY_NAME_ABBR": "集智转债",
+      "RATING": "A",
+      "PUBLIC_START_DATE": "2024-08-14 00:00:00",
+      "LISTING_DATE": "2024-08-28 00:00:00",
+      "TRANSFER_VALUE": 349.6963,
+      "TRANSFER_PREMIUM_RATIO": 6.66
+    },
+    {
+      "SECURITY_CODE": "127106",
+      "SECURITY_NAME_ABBR": "伟隆转债",
+      "RATING": "A",
+      "PUBLIC_START_DATE": "2024-08-13 00:00:00",
+      "LISTING_DATE": "2024-08-28 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "110096",
+      "SECURITY_NAME_ABBR": "豫光转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-08-12 00:00:00",
+      "LISTING_DATE": "2024-09-03 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "118049",
+      "SECURITY_NAME_ABBR": "汇成转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-08-07 00:00:00",
+      "LISTING_DATE": "2024-09-02 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123244",
+      "SECURITY_NAME_ABBR": "松原转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-08-01 00:00:00",
+      "LISTING_DATE": "2024-08-22 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "111021",
+      "SECURITY_NAME_ABBR": "奥锐转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-07-26 00:00:00",
+      "LISTING_DATE": "2024-08-15 00:00:00",
+      "TRANSFER_VALUE": 87.1692,
+      "TRANSFER_PREMIUM_RATIO": 60.72
+    },
+    {
+      "SECURITY_CODE": "111020",
+      "SECURITY_NAME_ABBR": "合顺转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-07-22 00:00:00",
+      "LISTING_DATE": "2024-08-15 00:00:00",
+      "TRANSFER_VALUE": 102.4551,
+      "TRANSFER_PREMIUM_RATIO": 40.29
+    },
+    {
+      "SECURITY_CODE": "113687",
+      "SECURITY_NAME_ABBR": "振华转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-07-12 00:00:00",
+      "LISTING_DATE": "2024-08-02 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123243",
+      "SECURITY_NAME_ABBR": "严牌转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-07-10 00:00:00",
+      "LISTING_DATE": "2024-07-26 00:00:00",
+      "TRANSFER_VALUE": 270.564,
+      "TRANSFER_PREMIUM_RATIO": -0.21
+    },
+    {
+      "SECURITY_CODE": "123242",
+      "SECURITY_NAME_ABBR": "赛龙转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-07-08 00:00:00",
+      "LISTING_DATE": "2024-07-29 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123241",
+      "SECURITY_NAME_ABBR": "欧通转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-07-05 00:00:00",
+      "LISTING_DATE": "2024-07-26 00:00:00",
+      "TRANSFER_VALUE": 941.2848,
+      "TRANSFER_PREMIUM_RATIO": 11.68
+    },
+    {
+      "SECURITY_CODE": "118048",
+      "SECURITY_NAME_ABBR": "利扬转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-07-02 00:00:00",
+      "LISTING_DATE": "2024-07-19 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "113686",
+      "SECURITY_NAME_ABBR": "泰瑞转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-07-02 00:00:00",
+      "LISTING_DATE": "2024-07-24 00:00:00",
+      "TRANSFER_VALUE": 142.2086,
+      "TRANSFER_PREMIUM_RATIO": 11.66
+    },
+    {
+      "SECURITY_CODE": "113685",
+      "SECURITY_NAME_ABBR": "升24转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-06-14 00:00:00",
+      "LISTING_DATE": "2024-07-10 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "111019",
+      "SECURITY_NAME_ABBR": "宏柏转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-04-17 00:00:00",
+      "LISTING_DATE": "2024-05-14 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "113684",
+      "SECURITY_NAME_ABBR": "湘泵转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-04-01 00:00:00",
+      "LISTING_DATE": "2024-04-29 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "113683",
+      "SECURITY_NAME_ABBR": "伟24转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-03-28 00:00:00",
+      "LISTING_DATE": "2024-04-22 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "113682",
+      "SECURITY_NAME_ABBR": "益丰转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-03-04 00:00:00",
+      "LISTING_DATE": "2024-03-27 00:00:00",
+      "TRANSFER_VALUE": 68.4045,
+      "TRANSFER_PREMIUM_RATIO": 90.91
+    },
+    {
+      "SECURITY_CODE": "127105",
+      "SECURITY_NAME_ABBR": "龙星转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2024-02-01 00:00:00",
+      "LISTING_DATE": "2024-03-06 00:00:00",
+      "TRANSFER_VALUE": 118.6207,
+      "TRANSFER_PREMIUM_RATIO": 20.57
+    },
+    {
+      "SECURITY_CODE": "123240",
+      "SECURITY_NAME_ABBR": "楚天转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-01-31 00:00:00",
+      "LISTING_DATE": "2024-02-29 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "127104",
+      "SECURITY_NAME_ABBR": "姚记转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-01-25 00:00:00",
+      "LISTING_DATE": "2024-02-26 00:00:00",
+      "TRANSFER_VALUE": 98.7537,
+      "TRANSFER_PREMIUM_RATIO": 52.3
+    },
+    {
+      "SECURITY_CODE": "123239",
+      "SECURITY_NAME_ABBR": "锋工转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-01-19 00:00:00",
+      "LISTING_DATE": "2024-02-22 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123238",
+      "SECURITY_NAME_ABBR": "卡倍转02",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-01-11 00:00:00",
+      "LISTING_DATE": "2024-02-01 00:00:00",
+      "TRANSFER_VALUE": null,
+      "TRANSFER_PREMIUM_RATIO": null
+    },
+    {
+      "SECURITY_CODE": "123237",
+      "SECURITY_NAME_ABBR": "佳禾转债",
+      "RATING": "A+",
+      "PUBLIC_START_DATE": "2024-01-04 00:00:00",
+      "LISTING_DATE": "2024-01-24 00:00:00",
+      "TRANSFER_VALUE": 110.9955,
+      "TRANSFER_PREMIUM_RATIO": 33.5
+    },
+    {
+      "SECURITY_CODE": "127103",
+      "SECURITY_NAME_ABBR": "东南转债",
+      "RATING": "AA",
+      "PUBLIC_START_DATE": "2024-01-03 00:00:00",
+      "LISTING_DATE": "2024-01-24 00:00:00",
+      "TRANSFER_VALUE": 159.1072,
+      "TRANSFER_PREMIUM_RATIO": 11.55
+    },
+    {
+      "SECURITY_CODE": "113681",
+      "SECURITY_NAME_ABBR": "镇洋转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2023-12-29 00:00:00",
+      "LISTING_DATE": "2024-01-17 00:00:00",
+      "TRANSFER_VALUE": 122.8571,
+      "TRANSFER_PREMIUM_RATIO": 15.66
+    },
+    {
+      "SECURITY_CODE": "127102",
+      "SECURITY_NAME_ABBR": "浙建转债",
+      "RATING": "AA+",
+      "PUBLIC_START_DATE": "2023-12-25 00:00:00",
+      "LISTING_DATE": "2024-01-16 00:00:00",
+      "TRANSFER_VALUE": 79.5499,
+      "TRANSFER_PREMIUM_RATIO": 61.34
+    },
+    {
+      "SECURITY_CODE": "111018",
+      "SECURITY_NAME_ABBR": "华康转债",
+      "RATING": "AA-",
+      "PUBLIC_START_DATE": "2023-12-25 00:00:00",
+      "LISTING_DATE": "2024-01-15 00:00:00",
+      "TRANSFER_VALUE": 115.3752,
+      "TRANSFER_PREMIUM_RATIO": 21.04
+    }
+  ]
+}
